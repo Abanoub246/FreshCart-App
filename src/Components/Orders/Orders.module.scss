@@ -1,0 +1,31 @@
+@import "../../index.scss";
+
+.hover {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  .hoverImg {
+    max-height: 20rem;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .cart {
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.25);
+    border: 0.0625rem solid $main-color;
+
+    .hoverImg {
+      scale: 1.1;
+    }
+  }
+}

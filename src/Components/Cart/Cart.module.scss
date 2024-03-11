@@ -1,0 +1,26 @@
+@import "../../index.scss";
+
+.cart{
+  background-image: url("../../assets/images/light-patten.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.btnOutlineMain {
+  --bs-btn-color: #08ac0a;
+  --bs-btn-border-color: #08ac0a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #08ac0a;
+  --bs-btn-hover-border-color: #08ac0a;
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #08ac0a;
+  --bs-btn-active-border-color: #08ac0a;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #08ac0a;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #08ac0a;
+  --bs-gradient: none;
+}

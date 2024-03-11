@@ -1,0 +1,73 @@
+$main-color: #08ac0a;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-color {
+  color: $main-color;
+}
+
+.bg-main {
+  background-color: $main-color;
+}
+
+/* <scroll-bar> */
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $main-color;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #006600;
+}
+
+/* </scroll-bar> */
+
+.sectionBg{
+  background-image: url("./assets/images/light-patten.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#btn-main {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #08ac0a;
+  --bs-btn-border-color: #08ac0a;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #006600;
+  --bs-btn-hover-border-color: #006600;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #006600;
+  --bs-btn-active-border-color: #006600;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #08ac0a;
+  --bs-btn-disabled-border-color: #08ac0a;
+}

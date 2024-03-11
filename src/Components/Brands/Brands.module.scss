@@ -1,0 +1,28 @@
+@import "../../index.scss";
+
+.brands {
+  background-image: url("../../assets/images/light-patten.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hover {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  .hoverImg {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.25);
+    border: 0.0625rem solid $main-color;
+
+    .hoverImg {
+      scale: 1.1;
+    }
+  }
+}

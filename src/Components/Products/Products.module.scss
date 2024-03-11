@@ -1,0 +1,85 @@
+@import "../../index.scss";
+
+.products{
+  background-image: url("../../assets/images/light-patten.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hover {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
+  .hoverImg {
+    max-height: 20rem;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .heart {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+
+    input + i {
+      color: gray;
+      font-size: 1.2rem;
+      padding-top: 60%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      display: none;
+    }
+
+    input:hover + i {
+      filter: brightness(1.2);
+    }
+
+    input:checked + i {
+      color: red;
+    }
+
+    &:hover {
+      scale: 1.05;
+    }
+  }
+
+  .cart {
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+          box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+      }
+  }
+
+  &:hover {
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.25);
+    border: 0.0625rem solid $main-color;
+
+    .hoverImg {
+      scale: 1.1;
+    }
+
+    .heart {
+      opacity: 1;
+      box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+    }
+  }
+}

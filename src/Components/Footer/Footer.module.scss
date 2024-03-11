@@ -1,0 +1,55 @@
+@import "../../index.scss";
+
+figure {
+  margin: 0;
+
+  .downloadLogo {
+    width: 7.5rem;
+    margin-left: 0.7rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      scale: 1.07;
+      filter: drop-shadow(0 0.125rem 0.3125rem rgba(0, 0, 0, 0.3));
+    }
+  }
+
+  .payLogo {
+    width: 3rem;
+    margin-left: 0.7rem;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      scale: 1.1;
+      filter: none;
+    }
+  }
+}
+
+footer i {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  margin: 0 0.3rem;
+  padding: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: white;
+    background-color: $main-color;
+    border: 1px solid white;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
