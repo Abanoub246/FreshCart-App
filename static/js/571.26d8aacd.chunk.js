@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfreshcartapp=self.webpackChunkfreshcartapp||[]).push([[571],{9571:(a,s,c)=>{c.d(s,{A:()=>e});c(5043);const e=c.p+"static/media/NoData.c79f54b44b918215a8fca7f832d98291.svg"}}]);
+//# sourceMappingURL=571.26d8aacd.chunk.js.map
