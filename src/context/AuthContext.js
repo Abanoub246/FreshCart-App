@@ -8,11 +8,11 @@ export default function AuthProvider({ children }) {
   const [userId, setUserId] = useState(null);
 
   const userToken = localStorage.getItem("token");
-  const { id } = jwtDecode(userToken);
 
   useEffect(() => {
     if (userToken) {
       setToken(userToken);
+      const { id } = jwtDecode(userToken);
       setUserId(id);
     }
   }, []);

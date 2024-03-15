@@ -9,18 +9,24 @@ export default function ProtectedRoute({ children }) {
 
   if (!token) {
     // return <Navigate to="/login" />;
-    <section className="min-vh-100 d-flex justify-content-center align-items-center">
-      <div className="container-md text-center">
+    return (
+      <section className="min-vh-100 d-flex justify-content-center align-items-center">
+        <div className="container-md text-center">
           <figure>
-            <img src={protectedImg} className="img-fluid mb-3" alt="Error" />
+            <img src={protectedImg} className="w-50 mb-3" alt="Error" />
           </figure>
           <h3 className="text-danger">Sorry, You Must Login First</h3>
 
-          <Link to="login" id="btn-main" className="btn mt-3 py-2 w-25 rounded-3">
+          <Link
+            to="login"
+            id="btn-main"
+            className="btn mt-3 py-2 w-25 rounded-3"
+          >
             Login
           </Link>
         </div>
-    </section>
+      </section>
+    );
   }
 
   return children;
